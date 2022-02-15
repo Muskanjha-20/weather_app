@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color.fromARGB(255, 221, 37, 37),
+        color: const Color.fromARGB(255, 221, 37, 37),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -22,14 +23,15 @@ class _HomeScreenState extends State<HomeScreen> {
               SvgPicture.asset(
                 assetName,
                 width: 60,
-                color: Color.fromARGB(255, 233, 237, 240),
+                color: const Color.fromARGB(255, 233, 237, 240),
               ),
-              const Text(
+              Text(
                 '24°',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 80,
+                  fontFamily: GoogleFonts.lato().fontFamily,
                 ),
               ),
               const Text(
